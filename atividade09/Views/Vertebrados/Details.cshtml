@@ -1,0 +1,90 @@
+﻿@model atividade09.Models.Vertebrados
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vertebrados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tem_pelos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tem_pelos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.raca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.raca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.penas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.penas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tamanho_metros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tamanho_metros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.regiao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.regiao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.familia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.familia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantidade_patas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantidade_patas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anfibio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anfibio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
